@@ -1,0 +1,28 @@
+//自己实现字符串拷贝函数
+   char*StrCpy(char*src)
+{
+   //1.计算src的长度len
+         char*src1=src;
+         while(*src1!='\0'){
+           src1++;
+         }
+         return src1-src;
+  
+   //2.用malloc申请长度为len+1的内存空间
+         src2=(char*)malloc((len+1)*sizeof(char));
+
+   //3.将src字符串逐个字符复制到新申请的内存空间
+         int i = 0;
+         while(src1[i]!=0){
+           src2[i]=src1[i];
+           i++;
+         }
+         src2[i]=0;
+
+   //4.新申请内存空间的最后一位放入‘\0’
+         char src2[] = '\0';
+
+   //5.返回新申请的内存空间指针
+         return src2;
+}
+
