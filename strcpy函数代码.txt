@@ -26,3 +26,6 @@
          return src2;
 }
 
+/**
+远程edit
+**/
